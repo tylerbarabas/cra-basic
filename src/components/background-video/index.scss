@@ -1,9 +1,8 @@
 .background-video{
   height: 100%;
   width: 100%;
-  filter: saturate(0.2); 
+  filter: hue-rotate(45deg);
 
   &.hue-rotate {
-    filter: hue-rotate(45deg) saturate(0.4);
   }
 }

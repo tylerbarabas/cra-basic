@@ -1,13 +1,22 @@
 import React from 'react';
 import BackgroundVideo from './components/background-video'
+import MiscProvider from './contexts/misc'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <BackgroundVideo />
-      <p style={{color: 'white', position: 'absolute', top: 0, left: 0}}>Hello</p>
-    </div>
+    <MiscProvider>
+      <div className="App">
+        <BackgroundVideo />
+        <h1
+          style={{
+            color: 'white',
+            position: 'absolute',
+            top: 0,
+            left: '100px',
+          }}>Bill Godfrey</h1>
+      </div>
+    </MiscProvider>
   );
 }
 

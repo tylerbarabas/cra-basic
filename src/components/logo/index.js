@@ -13,7 +13,7 @@ const Logo = () => {
         left: '100px',
         display,
       }}
-      className="animated fadeInDown"
+      className="animate__animated animate__fadeInDown"
     >
       Bill Godfrey
     </h1>

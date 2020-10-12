@@ -2,7 +2,8 @@ import React from 'react';
 import MiscProvider from './contexts/misc'
 import BackgroundVideo from './components/background-video'
 import Logo from './components/logo'
-import './App.css';
+import 'animate.css'
+import './App.css'
 
 function App() {
   return (

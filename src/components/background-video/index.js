@@ -10,8 +10,14 @@ const BackgroundVideo = () => {
       src="./fire1.mp4"
       muted
       autoPlay
-      onEnded={()=>{
-        setIsIntroFinished(true)
+      onPlay={e=>{
+        const { target } = e
+        const interval = setInterval(()=>{
+          if (target.currentTime > 2.35) {
+            setIsIntroFinished(true)
+            clearInterval(interval)
+          }
+        }, 100)
       }}
     />
   )

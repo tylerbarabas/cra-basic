@@ -11,7 +11,7 @@ const Logo = () => {
         position: 'absolute',
         top: '20px',
         left: '100px',
-        height: '140px',
+        height: '10%',
         display,
       }}
       className="animate__animated animate__fadeInDown"

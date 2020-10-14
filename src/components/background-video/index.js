@@ -13,7 +13,7 @@ const BackgroundVideo = () => {
       onPlay={e=>{
         const { target } = e
         const interval = setInterval(()=>{
-          if (target.currentTime > 2.35) {
+          if (target.currentTime > 3) {
             setIsIntroFinished(true)
             clearInterval(interval)
           }

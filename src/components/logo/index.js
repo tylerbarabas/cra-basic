@@ -14,7 +14,7 @@ const Logo = () => {
         height: '10%',
         display,
       }}
-      className="animate__animated animate__fadeInDown animate__slow"
+      className="animate__animated animate__fadeInDown"
     />
   )
 }

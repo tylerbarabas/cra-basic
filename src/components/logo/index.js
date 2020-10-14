@@ -5,18 +5,17 @@ const Logo = () => {
   const [ isIntroFinished ] = useContext(MiscContext).isIntroFinished
   const display = isIntroFinished ? '' : 'none'
   return (
-    <h1
+    <img
+      src="bg_logo_yellow.png"
       style={{
-        color: 'white',
         position: 'absolute',
-        top: 0,
+        top: '20px',
         left: '100px',
+        height: '140px',
         display,
       }}
       className="animate__animated animate__fadeInDown"
-    >
-      Bill Godfrey
-    </h1>
+    />
   )
 }
 

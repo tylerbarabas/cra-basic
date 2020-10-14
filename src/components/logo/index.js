@@ -15,6 +15,7 @@ const Logo = () => {
         display,
       }}
       className="animate__animated animate__fadeInDown"
+      alt="Bill Godfrey"
     />
   )
 }

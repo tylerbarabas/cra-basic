@@ -1,11 +1,23 @@
 div.nav {
   position: absolute;
-  top: 5%;
-  right: 32%;
+  top: 30px;
+  right: 40px;
   font-size: 70px;
   letter-spacing: 10px;
+  transform: rotate(4deg);
 
   span {
-    margin-right: 60px;
+    margin-left: 40px;
+    color: #f8ffdc;
+  }
+
+  span.nav-link {
+    cursor: pointer;
+    user-select: none;
+    transition: color 250ms;
+  }
+
+  span.nav-link:hover{
+    color: #da4961;
   }
 }

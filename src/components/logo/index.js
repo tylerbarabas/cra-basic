@@ -9,12 +9,12 @@ const Logo = () => {
       src="bg_logo_yellow.png"
       style={{
         position: 'absolute',
-        top: '20px',
+        top: '30px',
         left: '100px',
         height: '10%',
         display,
       }}
-      className="animate__animated animate__fadeInDown"
+      className="animate__animated animate__fadeInDown animate__slow"
       alt="Bill Godfrey"
     />
   )

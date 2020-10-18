@@ -6,6 +6,7 @@ import Logo from './components/logo'
 import Nav from './components/nav'
 import CallToAction from './components/call-to-action'
 import ElectronicPressKit from './components/electronic-press-kit'
+import Blog from './components/blog'
 import 'animate.css'
 import './App.css'
 
@@ -25,6 +26,11 @@ function App() {
               exact
               path="/epk"
               component={ElectronicPressKit}
+            />
+            <Route
+              exact
+              path="/blog"
+              component={Blog}
             />
           </Switch>
           <Link to="/">

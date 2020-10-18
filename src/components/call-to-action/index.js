@@ -6,7 +6,7 @@ const CallToAction = () => {
   const [ isIntroFinished ] = useContext(MiscContext).isIntroFinished
   const display = isIntroFinished ? '' : 'none'
   return (
-    <div className="call-to-action animate__animated animate__zoomInUp animate__slow" style={{display}}>
+    <div className="page call-to-action animate__animated animate__zoomInUp animate__slow" style={{display}}>
         <img className="album-cover" src="hypnotized-album-cover.png" alt="Album cover of the debut album Hypnotized" />
         <h1 className="listen-now">Now streaming!</h1>
         <div className="call-msg">

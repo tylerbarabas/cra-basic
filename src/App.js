@@ -5,6 +5,7 @@ import BackgroundVideo from './components/background-video'
 import Logo from './components/logo'
 import Nav from './components/nav'
 import CallToAction from './components/call-to-action'
+import ElectronicPressKit from './components/electronic-press-kit'
 import 'animate.css'
 import './App.css'
 
@@ -19,6 +20,11 @@ function App() {
               exact
               path="/"
               component={CallToAction}
+            />
+            <Route
+              exact
+              path="/epk"
+              component={ElectronicPressKit}
             />
           </Switch>
           <Link to="/">

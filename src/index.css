@@ -1,19 +1,13 @@
-@font-face{
-  font-family: 'Brownhill';
-  src: url('/Brownhill-Script.ttf');
+@font-face {
+  font-family: 'Chilanka Regular';
+  src: url(/SwankyandMooMoo-Regular.ttf);
 }
 body {
   margin: 0;
-  font-family: 'Brownhill', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Chilanka Regular', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  overflow: hidden;
 }
 
 html, #root {
@@ -25,4 +19,6 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
+  color: #f8ffdc;
+  letter-spacing: 5px;
 }

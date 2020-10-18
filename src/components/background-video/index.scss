@@ -1,6 +1,11 @@
 .background-video{
   height: 100%;
   width: 100%;
-  filter: hue-rotate(25deg);
+  filter: hue-rotate(0deg) brightness(1) blur(0);
+  transition: filter 2s;
   object-fit: cover;
+
+  &.intro-finished{
+    filter: hue-rotate(30deg) brightness(1.8) blur(12px);
+  }
 }

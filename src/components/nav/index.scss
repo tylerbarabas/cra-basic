@@ -1,14 +1,12 @@
 div.nav {
   position: absolute;
-  top: 30px;
-  right: 40px;
+  top: 15px;
+  right: 50px;
   font-size: 70px;
-  letter-spacing: 10px;
   transform: rotate(4deg);
 
   span {
     margin-left: 40px;
-    color: #f8ffdc;
   }
 
   span.nav-link {
@@ -18,6 +16,6 @@ div.nav {
   }
 
   span.nav-link:hover{
-    color: #da4961;
+    color: #e3ff75;
   }
 }

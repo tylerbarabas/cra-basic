@@ -1,11 +1,19 @@
 .background-video{
   height: 100%;
   width: 100%;
-  filter: hue-rotate(0deg) brightness(1) blur(0);
-  transition: filter 2s;
+  filter: hue-rotate(0deg) brightness(1) blur(0) saturate(1);
+  transition: filter 1s;
   object-fit: cover;
 
-  &.intro-finished{
-    filter: hue-rotate(30deg) brightness(1.8) blur(12px);
+  &.intro-finished.landing{
+    filter: hue-rotate(30deg) brightness(1.8) blur(12px) saturate(1) grayscale(0);
+  }
+
+  &.intro-finished.epk{
+    filter: hue-rotate(150deg) brightness(10) blur(20px) saturate(3) grayscale(0.4);
+  }
+
+  &.intro-finished.blog{
+    filter: hue-rotate(0) brightness(1) blur(0) saturate(0) grayscale(0);
   }
 }

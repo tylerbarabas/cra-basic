@@ -1,13 +1,15 @@
 import React, { useContext } from 'react'
 import { MiscContext } from '../../contexts/misc'
+import { BackdropContext } from '../../contexts/backdrop'
 import './index.scss'
 
 const BackgroundVideo = () => {
   const [isIntroFinished,setIsIntroFinished] = useContext(MiscContext).isIntroFinished
+  const backdropKey = useContext(BackdropContext)
   const colorClass = isIntroFinished ? 'intro-finished' : ''
   return (
     <video
-      className={`background-video ${colorClass}`}
+      className={`background-video ${colorClass} ${backdropKey}`}
       src="./fire1.mp4"
       muted
       autoPlay

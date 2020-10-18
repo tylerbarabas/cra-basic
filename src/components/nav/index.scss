@@ -9,13 +9,20 @@ div.nav {
     margin-left: 40px;
   }
 
-  span.nav-link {
+  a.nav-link {
+    color: #f8ffdc;
+    text-decoration: none;
+    margin-left: 40px;
     cursor: pointer;
     user-select: none;
     transition: color 250ms;
   }
 
-  span.nav-link:hover{
+  a.nav-link:visited{
+    color: #f8ffdc;
+  }
+
+  a.nav-link:hover{
     color: #e3ff75;
   }
 }

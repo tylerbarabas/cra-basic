@@ -1,4 +1,5 @@
 import React from 'react';
+import { Switch, Route, BrowserRouter, Link } from 'react-router-dom'
 import MiscProvider from './contexts/misc'
 import BackgroundVideo from './components/background-video'
 import Logo from './components/logo'
@@ -12,9 +13,19 @@ function App() {
     <MiscProvider>
       <div className="App">
         <BackgroundVideo />
-        <CallToAction />
-        <Logo />
-        <Nav />
+        <BrowserRouter>
+          <Switch>
+            <Route
+              exact
+              path="/"
+              component={CallToAction}
+            />
+          </Switch>
+          <Link to="/">
+            <Logo />
+          </Link>
+          <Nav />
+        </BrowserRouter>
       </div>
     </MiscProvider>
   );

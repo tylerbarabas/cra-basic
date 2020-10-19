@@ -6,7 +6,7 @@ const Blog = () => {
   const [ isIntroFinished ] = useContext(MiscContext).isIntroFinished
   const display = isIntroFinished ? '' : 'none'
   return (
-    <div className="page blog animate__animated animate__fadeIn" style={{display}}>
+    <div className="page blog animate__animated animate__fadeInUp animate__slowest" style={{display}}>
       <div className="paper">
         <img src="notebook-paper.png" className="paper-img" />
         <div className="paper-inner">

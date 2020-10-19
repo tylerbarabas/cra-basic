@@ -8,12 +8,12 @@ div.blog {
     img.paper-img{
       width: 100%;
       position: absolute;
-      transform: rotate(-2deg);
+      transform: rotate(-1.5deg);
       opacity: 0.7;
     }
     div.paper-inner{
       padding-left: 16vw;
-      padding-top: 6vh;
+      padding-top: 6.5vh;
       padding-right: 13vw;
       position: absolute;
       height: 100%;
@@ -21,11 +21,14 @@ div.blog {
 
       h1 {
         font-size: 52px;
+        margin-bottom: 4.5vh;
       }
 
       p {
         font-size: 40px;
         line-height: 52px;
+        height: 56vh;
+        overflow: hidden;
       }
     }
   }

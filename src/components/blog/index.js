@@ -1,9 +1,12 @@
 import React, { useContext } from 'react'
 import { MiscContext } from '../../contexts/misc'
+import { BlogContext } from '../../contexts/blog'
 import './index.scss'
 
 const Blog = () => {
   const [ isIntroFinished ] = useContext(MiscContext).isIntroFinished
+  const blog = useContext(BlogContext)
+  console.log('blog', blog)
   const display = isIntroFinished ? '' : 'none'
   return (
     <div className="page blog animate__animated animate__fadeIn animate__slow" style={{display}}>

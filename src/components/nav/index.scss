@@ -16,6 +16,7 @@ div.nav {
     cursor: pointer;
     user-select: none;
     transition: color 250ms;
+
   }
 
   a.nav-link:visited{
@@ -24,5 +25,9 @@ div.nav {
 
   a.nav-link:hover{
     color: #e3ff75;
+  }
+
+  .invert{
+    filter: invert(1);
   }
 }

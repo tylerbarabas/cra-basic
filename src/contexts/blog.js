@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from 'react'
+import React, { createContext, useState, useEffect, useRef } from 'react'
 import Service from '../service'
 
 export const BlogContext = createContext()
@@ -11,7 +11,6 @@ const DEFAULT = {
 
 const BlogProvider = props => {
   const [ blog, setBlog ] = useState(DEFAULT)
-
 
   const blogMethods = {
     getBlog: async ()=> {
@@ -40,8 +39,9 @@ const BlogProvider = props => {
     }
   }
 
+  const _blogMethods = useRef(blogMethods)
   useEffect(()=>{
-    blogMethods.getBlog()
+    _blogMethods.current.getBlog()
   },[])
 
   return (

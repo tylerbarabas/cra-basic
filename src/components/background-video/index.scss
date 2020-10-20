@@ -1,4 +1,5 @@
 .background-video{
+  position: fixed;
   height: 100%;
   width: 100%;
   filter: hue-rotate(0deg) brightness(1) blur(0) saturate(1) invert(0);
@@ -13,6 +14,6 @@
     filter: hue-rotate(0) brightness(1) blur(0) saturate(0) invert(0);
   }
   &.intro-finished.blog {
-    filter: hue-rotate(0) brightness(1) blur(0) saturate(1) invert(1);
+    filter: hue-rotate(0) brightness(1) blur(12px) saturate(1) invert(1);
   }
 }

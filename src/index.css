@@ -7,7 +7,6 @@ body {
   font-family: 'Chilanka Regular', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
 }
 
 html, #root {

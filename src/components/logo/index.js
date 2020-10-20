@@ -11,7 +11,7 @@ const Logo = () => {
     <img
       src={src}
       style={{
-        position: 'absolute',
+        position: 'fixed',
         top: '30px',
         left: '100px',
         height: '10%',

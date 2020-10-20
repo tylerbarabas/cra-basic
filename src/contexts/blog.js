@@ -21,7 +21,6 @@ const BlogProvider = props => {
       })
       const res = await Service.getBlog()
       const data = await res.json()
-      console.log('data', data)
       if (res.ok) {
         setBlog({
           ...blog,

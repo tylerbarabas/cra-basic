@@ -2,7 +2,7 @@
   font-family: 'Chilanka Regular';
   src: url(/SwankyandMooMoo-Regular.ttf);
 }
-body {
+body, button {
   margin: 0;
   font-family: 'Chilanka Regular', sans-serif;
   -webkit-font-smoothing: antialiased;

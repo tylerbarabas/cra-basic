@@ -27,12 +27,12 @@ const _getMusicVideo = () => (
 const CallToAction = () => {
   const [ isIntroFinished ] = useContext(MiscContext).isIntroFinished
   const display = isIntroFinished ? '' : 'none'
-  const [ isNowStreaming, setIsNowStreaming ] = useState(false)
+  const [ isNowStreaming, setIsNowStreaming ] = useState(true)
   const bottomTemplate = isNowStreaming ? _getNowStreaming() : _getMusicVideo()
   useEffect(()=>{
     const timeout = setTimeout(()=>{
       setIsNowStreaming(!isNowStreaming)
-    },5000)
+    },7000)
     return ()=>{
       clearTimeout(timeout)
     }

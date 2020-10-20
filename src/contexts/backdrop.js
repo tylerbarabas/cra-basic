@@ -13,10 +13,13 @@ const BackdropProvider = props => {
   useEffect(()=>{
     if (pathname === '/' && key !== DEFAULT) {
       setKey(DEFAULT)
+      document.body.classList.remove('light')
     } else if (pathname === '/blog' && key !== 'blog') {
       setKey('blog')
+      document.body.classList.add('light')
     } else if (pathname === '/epk' && key !== 'epk') {
       setKey('epk')
+      document.body.classList.remove('light')
     }
   },[pathname, key])
 

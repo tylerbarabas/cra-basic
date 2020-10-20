@@ -7,7 +7,7 @@ const _listBlogPosts = results => results.map((result, i) => (
   <div className="post-container" key={`${result.title}-${i}`}>
     <h1>{result.title}</h1>
     <p>
-      <img src={result.image} alt={result.alt} />
+      <img src={result.image} alt={result.alt} className="blog-image" />
       {result.body}
     </p>
   </div>
